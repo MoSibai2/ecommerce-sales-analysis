@@ -42,6 +42,7 @@ Data period: 2016–2018.
 
 ## Project Structure
 
+[View the Jupyter Notebook](ecommerce_sales_analysis.ipynb)
 - `ecommerce_sales_analysis.ipynb` — Main analysis notebook.
 - `README.md` — Project documentation.
 
