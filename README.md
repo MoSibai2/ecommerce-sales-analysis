@@ -1,58 +1,67 @@
 # Brazilian E-Commerce Sales Analysis
 
-A data analysis project exploring sales performance, product categories, payment methods, customer reviews, and delivery performance using the Brazilian E-Commerce Public Dataset by Olist.
+An analysis of 96,000+ real e-commerce orders covering sales, product categories, payment methods, customer reviews, and delivery performance, using the Olist public dataset.
 
-## Project Overview
+## Business Questions
 
-This project uses Python to analyze historical e-commerce transactions and identify meaningful business insights that can support better business decisions.
-
-## Objectives
-
-- Analyze sales and revenue trends.
-- Identify the highest-revenue product categories.
-- Understand customer payment preferences.
-- Evaluate customer satisfaction through review scores.
-- Examine delivery performance and late deliveries.
-
-## Tools & Technologies
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Google Colab
+- How is revenue distributed across product categories?
+- How do customers prefer to pay?
+- How satisfied are customers?
+- How reliable is delivery?
 
 ## Dataset
 
-**Brazilian E-Commerce Public Dataset by Olist**
+[Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+Orders, customers, sellers, products, payments, reviews, and delivery data from 2016 to 2018.
 
-The dataset contains information about orders, customers, sellers, products, payments, reviews, and delivery.
+## Tools
 
-Data period: 2016–2018.
+Python, Pandas, NumPy, Matplotlib, Google Colab.
 
 ## Key Findings
 
-- Total revenue from delivered orders: 13.22 million BRL.
-- Total delivered orders analyzed: 96,478.
-- Average order value: 137.04 BRL.
-- Highest-revenue category: Health & Beauty.
-- Most-used payment method by value: Credit Card (78.46%).
-- Average customer review score: 4.16 out of 5.
-- On-time delivery rate: 91.89%.
+| Metric | Result |
+|---|---|
+| Revenue (delivered orders) | 13.22 million BRL |
+| Delivered orders analyzed | 96,478 |
+| Average order value | 137.04 BRL |
+| Top category by revenue | Health & Beauty |
+| Top payment method by value | Credit Card (78.46%) |
+| Average review score | 4.16 / 5 |
+| On-time delivery rate | 91.89% |
 
-## Project Structure
+## Charts
 
-[View the Jupyter Notebook](ecommerce_sales_analysis.ipynb)
-- `ecommerce_sales_analysis.ipynb` — Main analysis notebook.
-- `README.md` — Project documentation.
+![Top categories by revenue](images/top_categories.png)
+![Payment methods](images/payment_methods.png)
+![Review scores](images/review_scores.png)
+![Delivery performance](images/delivery_performance.png)
+
+## Business Recommendations
+
+- Invest in inventory and marketing for **Health & Beauty**, the top revenue category.
+- Keep credit card (and installment) payments smooth, since they dominate payment value.
+- Investigate the ~8% of late deliveries, because late orders are a likely source of low review scores.
+- Track review scores per category and seller to find where satisfaction can improve.
 
 ## Limitations
 
-- The analysis focuses on delivered orders.
-- The dataset covers historical data from 2016 to 2018.
-- Revenue calculations exclude shipping fees.
-- The available data does not establish the exact causes of delivery delays or negative reviews.
+- Only delivered orders are analyzed.
+- Data covers 2016 to 2018 only.
+- Revenue excludes shipping fees.
+- The data cannot establish the exact causes of delivery delays or negative reviews.
+
+## Skills Demonstrated
+
+Data cleaning, merging multiple tables, exploratory data analysis, KPI calculation, data visualization, business insights.
+
+## Project Structure
+
+- `ecommerce_sales_analysis.ipynb`: main analysis notebook
+- `images/`: charts used in this README
+- `README.md`
 
 ## Author
 
-MoSibai
+**Mohamed Sibai (MoSibai)**
+GitHub: [MoSibai2](https://github.com/MoSibai2)
